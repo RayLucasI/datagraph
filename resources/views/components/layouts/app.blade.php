@@ -7,7 +7,7 @@
         <title>{{ $title ?? 'Page Title' }}</title>
     </head>
     <body>
-        <div>Aquí va el slot</div>
+        <div>Aquí va el slot para livewire</div>
         {{ $slot }}
     </body>
 </html>
