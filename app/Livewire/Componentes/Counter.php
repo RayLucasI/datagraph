@@ -8,8 +8,8 @@ class Counter extends Component
 {
     public $count = 1;
 
-    public function increment(){
-        $this->count++;
+    public function increment($by){
+        $this->count = $this->count + $by;
     }
     public function decrement(){
         $this->count--;

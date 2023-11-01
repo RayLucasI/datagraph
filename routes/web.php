@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\Componentes\Counter;
+use App\Livewire\Componentes\Todos;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +30,5 @@ Route::view('profile', 'profile')
 require __DIR__.'/auth.php';
 
 Route::get('/counter',Counter::class);
+
+Route::get('/tareas',Todos::class);
