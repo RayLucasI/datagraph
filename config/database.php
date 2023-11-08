@@ -35,6 +35,17 @@ return [
 
     'connections' => [
 
+        'condoc_eti' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST_A', '132.248.205.141'),
+            'port'      => env('DB_PORT_A', '3306'),
+            'database'  => env('DB_DATABASE_A', 'condoc_etitulos'),
+            'username'  => env('DB_USERNAME_A', 'rot'),
+            'password'  => env('DB_PASSWORD_A', 'admin'),
+            'charset'   => 'utf8',
+            'prefix'    => '',
+          ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
