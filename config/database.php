@@ -46,6 +46,18 @@ return [
             'prefix'    => '',
           ],
 
+          'sybase' => [
+            'driver'    => 'sqlsrv',
+            'host'      => env('DB_HOST_2', '132.248.205.70'),
+            'port'      => env('DB_PORT_2', '3023'),
+            'database'  => env('DB_DATABASE_2', 'ConDocDB'),
+            'username'  => env('DB_USERNAME_2', 'cercondoc'),
+            'password'  => env('DB_PASSWORD_2', 'zeR0nd.81-'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_spanish_ci',
+            'prefix'    => '',
+          ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),

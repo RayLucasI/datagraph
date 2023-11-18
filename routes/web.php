@@ -35,4 +35,7 @@ Route::get('/counter',Counter::class);
 Route::get('/tareas',Todos::class);
 
 Route::get('/data',[registroController::class,'dataQ']);
+   
+Route::get('/siae/{num_cta}',[registroController::class,'Siae']);
 
+Route::get('/info', function(){ return view('phpinfo.infor');});
