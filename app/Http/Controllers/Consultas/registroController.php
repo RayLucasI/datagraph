@@ -21,10 +21,10 @@ class registroController extends Controller
         foreach ($sols as $sol) {
             $data = $this->plantel_carrera_orientacion($sol->num_cta,$sol->cve_carrera,$sol->nivel); // orientacion() traitData
             $titulados = $this->Siae($sol->num_cta);
-            dd('dataQ, $data',$sols,$sol, $data, $titulados);
-            //$this->Siae($sol->num_cta);
-        }
-        return ;
+            //dd($sol->num_cta);
+            //$this->Siae($sol(num_cta);
+        }  
+        return view('phpinfo/infor',compact('sols'));
     }    
 
     public function Siae($num_cta) { // consultamos las carreras con status de titulación del alumno.

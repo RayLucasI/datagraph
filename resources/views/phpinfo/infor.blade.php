@@ -11,9 +11,9 @@
 </head>
 <body>
   <div class="flex gap-4">
-    <div class="card basis-1/4 sm:basis-1/3">1</div>
-    <div class="card basis-1/4 sm:basis-1/3">2</div>
-    <div class="card basis-1/2 sm:basis-1/3">3</div>
+      @foreach ($sols as $solicitud)
+      <div class="card basis-1/4 sm:basis-1/3">{{ $solicitud->num_cta.'-'.$solicitud->cve_carrera }}</div>
+      @endforeach
   </div>
 </body>
 </html>    
