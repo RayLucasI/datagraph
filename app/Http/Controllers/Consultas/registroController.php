@@ -20,8 +20,10 @@ class registroController extends Controller
         $sols = $this->solicitud($limit);  // solicitud(): traitData
         foreach ($sols as $sol) {
             $data = $this->plantel_carrera_orientacion($sol->num_cta,$sol->cve_carrera,$sol->nivel); // orientacion() traitData
-            dd('dataQ $data',$sols,$sol, $data);
-            $this->Siae($sol->num_cta);}
+            $titulados = $this->Siae($sol->num_cta);
+            dd('dataQ, $data',$sols,$sol, $data, $titulados);
+            //$this->Siae($sol->num_cta);
+        }
         return ;
     }    
 
@@ -35,13 +37,7 @@ class registroController extends Controller
         $situaciones = (isset($trayectoria->situaciones))? collect($trayectoria->situaciones) : collect([]);                     
         $titulados = ($situaciones->count())? $situaciones->where('causa_fin',14): collect([]);      
         // Verificamos si existen registros de titulación
-        //dd($situaciones,$titulados);
-        if ($titulados->count()) { 
-            dd('Con registros de titulación',$trayectoria,$titulados);            
-        } else {
-            dd('Sin registros de titulación',$trayectoria,$titulados);
-        }
-        return ;
+        return $titulados;
     } 
 }
 

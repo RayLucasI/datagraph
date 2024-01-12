@@ -10,11 +10,9 @@ trait traitData
         // Este query esta diseñado para traer los alumnos con más cédulas dentro de solicitudes_sep
         // Asi mismo, cada conjunto de datos tiene un orden aleatorio para variar la respuesta.
         // A su vez, el query solo nos devuelve los primeros "limit" registros.
-
         $query  = "Select * from (Select ss.num_cta,count(*) from solicitudes_sep ss group by num_cta having count(*)>2 order by rand() ) pp ";
         $query .= "join solicitudes_sep xx  on xx.num_cta = pp.num_cta limit $limit ";
         $data = DB::connection('condoc_eti')->select($query);
-
         return $data;
     }
 
