@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Componentes;
+namespace App\Livewire;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class HelloWorld extends Component
 {
     public function render()
     {
-        return view('livewire.componentes.hello-world',['name'=>'jelly']);
+        return view('livewire.hello-world');
     }
 }

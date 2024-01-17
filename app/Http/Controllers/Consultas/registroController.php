@@ -17,14 +17,21 @@ class registroController extends Controller
     public function dataQ() {
         // Integramos información.
         $limit = 4;
-        $sols = $this->solicitud($limit);  // solicitud(): traitData
+        $sols = $this->solicitud($limit);  // solicitud(): traitData;
         foreach ($sols as $sol) {
             $data = $this->plantel_carrera_orientacion($sol->num_cta,$sol->cve_carrera,$sol->nivel); // orientacion() traitData
             $titulados = $this->Siae($sol->num_cta);
-            //dd($sol->num_cta);
-            //$this->Siae($sol(num_cta);
         }  
-        return view('phpinfo/infor',compact('sols'));
+        $html  = "<div>";
+        $html .= "  <div class='grid grid-cols-2 gap-4 h-[100vh]'> ";
+        $html .= "  <div class='card_g col-span-2'>header</div> ";
+        $html .= "  <div class='card_g col-span-2'>nav</div> ";
+        $html .= "  <div class='card_g'>section</div> ";
+        $html .= "  <div class='card_g'>article</div> ";
+        $html .= "  <div class='card_g row-[3/5] col-start-2'>side</div> ";
+        $html .= "  <div class='card_g col-span-2'>footer</div> ";
+        $html .= "/div>";
+        return view('phpinfo/infor',compact('sols','html'));
     }    
 
     public function Siae($num_cta) { // consultamos las carreras con status de titulación del alumno.

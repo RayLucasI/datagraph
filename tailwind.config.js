@@ -14,6 +14,10 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'azul-claro': '#243cff',
+                'azul_oscuro': '#0d1b3e',
+            },
         },
     },
 
