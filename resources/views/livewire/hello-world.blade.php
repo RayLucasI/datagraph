@@ -1,3 +1,5 @@
 <div>
-    Hello Worlds
+    <input wire:model.live="name" type="text"/>
+    Hello {{$name}}
 </div>
+    

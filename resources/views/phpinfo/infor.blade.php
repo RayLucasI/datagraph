@@ -11,10 +11,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-  <div class="card_f">
-      @livewire("hello-world")    
-  </div>
-  @livewireScripts
+    @livewire('hello-world')
+
+    @livewireScripts
 </body>
 </html>    
 
