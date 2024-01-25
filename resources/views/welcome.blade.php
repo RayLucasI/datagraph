@@ -3,18 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Scripts -->
-        @livewireStyles
+        <title>Livewire Basics</title>     
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
-        <!--<livewire:counter/>-->
-        <!--<livewire:HelloWorld />-->
-        @livewire('HelloWorld')
-        @livewireScripts
+        @livewire('Todos')        
     </body>
 </html>
 

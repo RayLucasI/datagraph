@@ -1,7 +1,11 @@
 <div>
-    <div class="text-4xl">{{ $count }}</div>
-    <button wire:click="increment"
-            class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-        Incrementa
-    </button> 
+    count: {{$count}}
+    <div class="inline-flex">
+        <button wire:click="decrement()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+            Decrement
+        </button>
+        <button wire:click="increment()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+            increment
+        </button>
+    </div>
 </div>

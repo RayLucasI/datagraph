@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Livewire\Componentes\Counter;
-use App\Livewire\Componentes\Todos;
+use App\Livewire\Counter;
+use App\Livewire\Todos;
+use App\Livewire\ListaLibros;
+
 
 use App\Http\Controllers\Consultas\registroController;
 
@@ -18,7 +20,12 @@ use App\Http\Controllers\Consultas\registroController;
 |
 */
 
-Route::view('/', 'welcome');
+
+/** ruta original
+ * 
+ * Route::view('/', 'welcome');
+ * 
+ **/
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -40,3 +47,7 @@ Route::get('/siae/{num_cta}',[registroController::class,'Siae']);
 
 Route::get('/info', function(){ return view('phpinfo.infor');});
 
+// Estas tres rutas se despliegan en el componente "slot" de resources/views/components/layouts/app.blade.php
+Route::get('/', Todos::class);
+Route::get('/counter', Counter::class);
+Route::get('/lista', ListaLibros::class);
