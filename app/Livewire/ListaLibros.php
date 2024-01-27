@@ -16,6 +16,6 @@ class ListaLibros extends Component
     }
     public function render()
     {
-        return view('livewire.lista-libros',['libros' => Posts::all()]);
+        return view('livewire.lista-libros',['libros' => Posts::all()]);                
     }
 }
