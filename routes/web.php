@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
 use App\Livewire\Todos;
 use App\Livewire\ListaLibros;
+use App\Livewire\CreatePost;
 
 
 use App\Http\Controllers\Consultas\registroController;
@@ -51,3 +52,4 @@ Route::get('/info', function(){ return view('phpinfo.infor');});
 Route::get('/', Todos::class);
 Route::get('/counter', Counter::class);
 Route::get('/lista', ListaLibros::class);
+Route::get('/nuevo',CreatePost::class);

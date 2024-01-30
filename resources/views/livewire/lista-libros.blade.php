@@ -23,7 +23,7 @@
                             <td class="px-6 py-4">
                                 {{$libro->tema}}
                             </td>                        
-                            <td> Verificar porque pulsamos la casilla de no notificar y ya no aparece la ventana emergente.
+                            <td>
                             <button type="button" 
                                     wire:click="delete({{ $libro->id }})" 
                                     wire:confirm="Quieres borrar el libro:\n\n{{$libro->titulo}}?"
