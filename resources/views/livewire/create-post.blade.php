@@ -1,6 +1,6 @@
 <div>
     <h2>New Post:</h2>
-    <br>
+    <br>  
     <form wire:submit="save">
         <label for="">
             <span>Title</span>
@@ -12,6 +12,9 @@
         <label>
             <span>Content</span>
             <textarea wire:model="tema"></textarea>
+            <small>Worlds:
+                <span x-text="$wire.tema.split(' ').length-1"></span>
+            </small>
             @error('tema') <em>{{ $message }}</em> @enderror            
         </label>
         <button type="submit" 
