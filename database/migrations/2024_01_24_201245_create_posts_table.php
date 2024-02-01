@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->string('tema');
             $table->timestamps();
+            $table->archivedAt(); // Macro
         });
     }
 
