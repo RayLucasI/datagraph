@@ -7,8 +7,9 @@ use App\Livewire\Todos;
 use App\Livewire\ListaLibros;
 use App\Livewire\CreatePost;
 
-
 use App\Http\Controllers\Consultas\registroController;
+
+use App\Livewire\Live\GetStart\HelloWorld;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +54,6 @@ Route::get('/', Todos::class);
 Route::get('/counter', Counter::class);
 Route::get('/lista', ListaLibros::class);
 Route::get('/nuevo',CreatePost::class);
+
+// Rutas del segundo curso
+Route::get('/curso2',HelloWorld::class);
