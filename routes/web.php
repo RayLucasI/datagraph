@@ -11,6 +11,10 @@ use App\Http\Controllers\Consultas\registroController;
 
 use App\Livewire\Live\GetStart\HelloWorld;
 
+use App\Livewire\Live\GetStart\Lifecicle;
+
+use App\Livewire\Live\GetStart\Lifecicle2;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,3 +61,6 @@ Route::get('/nuevo',CreatePost::class);
 
 // Rutas del segundo curso
 Route::get('/curso2',HelloWorld::class);
+Route::get('/hooks',Lifecicle::class);
+
+Route::get('/hooks2',Lifecicle2::class);
