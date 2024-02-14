@@ -15,7 +15,10 @@ class Lifecicle extends Component
 
     public function render()
     {
-        return view('livewire.live.get-start.lifecicle')        
-        ->layout('livewire.live.components.layouts.app1');
+        //return view('livewire.live.get-start.lifecicle')        
+        //->layout('livewire.live.components.layouts.app1');
+
+        return view('livewire.live.get-start.lifecicle')
+        ->layout('components.layouts.app1');
     }
 }

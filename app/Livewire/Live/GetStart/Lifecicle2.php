@@ -7,11 +7,21 @@ use Livewire\Component;
 
 class Lifecicle2 extends Component
 {
-    public $name = 'Jelly';
+    public $name = 'Yelis';
+    public $loud = false;
+    public $greeting = ["Hello"];
 
+    public function resetName($name='Chico')
+    {
+        //$this->name = 'Chico';
+        $this->name = $name;
+    }
+ 
     public function render()
     {
         return view('livewire.live.get-start.lifecicle2')
-        ->extends('livewire.live.get-start.layouts.app');
+        ->layout('components.layouts.app1');
     }
 }
+
+

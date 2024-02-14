@@ -61,6 +61,5 @@ Route::get('/nuevo',CreatePost::class);
 
 // Rutas del segundo curso
 Route::get('/curso2',HelloWorld::class);
-Route::get('/hooks',Lifecicle::class);
-
 Route::get('/hooks2',Lifecicle2::class);
+Route::get('/hooks',Lifecicle::class);

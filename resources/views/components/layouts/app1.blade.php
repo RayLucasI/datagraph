@@ -15,8 +15,11 @@
                         <a wire:navigate href="/curso2" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Hello</a>
                     </li>      
                     <li>
-                        <a wire:navigate href="/hooks" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Lfecycle Hooks</a>
-                    </li>               
+                        <a wire:navigate href="/hooks2" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Lfecycle-Hooks</a>
+                    </li>         
+                    <li>
+                        <a wire:navigate href="/hooks" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Lfecycle-Hooks-1</a>
+                    </li>        
                 </ul>
                 </div>
             </div>
