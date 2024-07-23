@@ -1,5 +1,5 @@
 <div>
-    <div class="bg-blue-600 text-yellow-300 text-3xl">Lista de Libros</div>
+    <div class="bg-blue-600 text-yellow-300 text-3xl">Lista De Libros</div>
     <br><br>
     <div class="relative overflow-x-auto">
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
